@@ -14,9 +14,10 @@
         (pkgs.texlive)
         scheme-medium # TexLive medium shceme
         collection-langother # Contains all the dependencies to make LuaLaTeX work with Hebrew
-        # To make LyX work
-        # relsize
-        # titlesec
+        # Used in latex preamble
+        relsize
+        titlesec
+        luabidi
         # To make LyX work with Heberw documents
         # upquote
         # bidi

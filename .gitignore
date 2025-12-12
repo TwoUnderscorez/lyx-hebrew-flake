@@ -1,2 +1,8 @@
 .direnv/
 result
+*.lyx~
+.#lyx#
+*.pdf
+*.aux
+*.log
+*.out
