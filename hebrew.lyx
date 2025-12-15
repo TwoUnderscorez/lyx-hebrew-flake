@@ -360,7 +360,6 @@ status open
 
 \begin_layout Plain Layout
 
-\lang english
 
 \backslash
 text
@@ -383,14 +382,12 @@ status open
 
 \begin_layout Plain Layout
 
-\lang english
 def foo(a:
  int) -> int:
 \end_layout
 
 \begin_layout Plain Layout
 
-\lang english
     return a**2
 \end_layout
 
@@ -474,7 +471,76 @@ Additional Theorem Text
 הוכחה.
 \end_layout
 
-\begin_layout Proof
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המסמך הזה נכתוב על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\nospellcheck default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+NixOS
+\lang hebrew
+ 
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "default"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename nixflake.png
+	scale 1.5
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
