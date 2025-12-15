@@ -1,6 +1,6 @@
 # LyX Flake with Hebrew support
 
-This setup relies on LuaLaTeX and Babel becuase they are supirior to XeLaTex/PdfLaTex and Polyglossia.
+This setup relies on LuaLaTeX and Babel because they are superior to XeLaTex/PdfLaTex and Polyglossia.
 
 To compile/preview a document, make sure you've selected LuaLaTex in LyX. 
 
