@@ -13,7 +13,7 @@
     pkgs = import nixpkgs {
       inherit system;
       overlays = [
-        # The LyX package doesn't provide an option to pass in a list of cirtionaries
+        # The LyX package doesn't provide an option to pass in a list of dictionaries
         # This will patch the LyX package with the dictionaries defined above.
         (final: prev: let
           hunspellWithDictionaries = prev.hunspell.withDicts hunspellDictionaries;
@@ -33,7 +33,7 @@
     texliveCombined = pkgs.texlive.combine {
       inherit
         (pkgs.texlive)
-        scheme-medium # TexLive medium shceme
+        scheme-medium # TexLive medium scheme
         collection-langother # Contains all the dependencies to make LuaLaTeX work with Hebrew
         ;
     };

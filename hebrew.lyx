@@ -15,7 +15,7 @@
 \babelfont[hebrew]{tt}{Miriam Mono CLM}
 
 % Fix enum level 2
-\renewcommand{\labelenumii}{(\alph{enumi}(}
+\renewcommand{\labelenumii}{)\alph{enumi}(}
 \end_preamble
 \use_default_options true
 \begin_modules
