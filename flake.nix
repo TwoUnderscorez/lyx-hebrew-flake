@@ -21,7 +21,7 @@
           lyx = prev.lyx.overrideAttrs (oldAttrs: {
             # Add the hunspell with our dictionaries to the list of runtime dependencies
             buildInputs = oldAttrs.buildInputs ++ [hunspellWithDictionaries];
-            # Create a link to Hunspell's dictionary directory where LyX expectes to find it.
+            # Create a link to Hunspell's dictionary directory where LyX expects to find it.
             postInstall = ''
               ln -sf ${hunspellWithDictionaries}/share/hunspell $out/share/lyx/dicts
             '';
