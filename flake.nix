@@ -2,7 +2,7 @@
   description = "LyX";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
   };
 
   outputs = {nixpkgs, ...} @ inputs: let
@@ -34,7 +34,8 @@
       inherit
         (pkgs.texlive)
         scheme-medium # TexLive medium scheme
-        collection-langother # Contains all the dependencies to make LuaLaTeX work with Hebrew
+        collection-langother # Contains all the dependencies to make LuaLaTeX work with Hebrew, also install culmus fonts
+        # Add any LaTeX package here on a new line
         ;
     };
   in {

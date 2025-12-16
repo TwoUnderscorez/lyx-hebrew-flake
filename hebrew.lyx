@@ -106,6 +106,9 @@ theorems-std
 \papersides 1
 \paperpagestyle default
 \tablestyle default
+\bullet 0 2 5 -1
+\bullet 1 1 29 -1
+\bullet 3 0 27 -1
 \tracking_changes false
 \output_changes false
 \change_bars false
@@ -397,7 +400,7 @@ def foo(a:
 \end_layout
 
 \begin_layout Standard
-בנוסף אפשר גם למספר רשימות,
+בנוסף אפשר גם לכתוב רשימות,
 \end_layout
 
 \begin_layout Enumerate
@@ -417,6 +420,28 @@ def foo(a:
 \begin_deeper
 \begin_layout Enumerate
 וממוספרת
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+רשימה
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מקוננת
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לא
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ממוספרת
 \end_layout
 
 \end_deeper

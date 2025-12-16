@@ -1,7 +1,7 @@
 .direnv/
 result
 *.lyx~
-.#lyx#
+\#*.lyx#
 *.pdf
 *.aux
 *.log
