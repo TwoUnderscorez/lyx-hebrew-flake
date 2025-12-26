@@ -31,6 +31,16 @@ Per document, Document -> Settings -> Output -> Default output format: PDF LuaTe
 To compile to PDF all `*.lyx` files in this repo to a PDF, run `nix build` and see the
 results under the `result` folder.
 
+## Installing LaTeX packages
+
+To install a latex package find it on search.nix.org, let's take `relsize` as an example.
+[This](https://search.nixos.org/packages?channel=25.11&query=relsize) is what your search result would look like.
+To install the package you'd copy whatever's after `texlivePackages.` to a new line
+in `flake.nix` after line 38. Note that some packages have external dependencies. A good
+example would be [minted](https://search.nixos.org/packages?channel=25.11&show=texlivePackages.minted&query=minted)
+as it requires Python installation with [pygments](https://pygments.org/). Because Nix is awesome, this
+dependency will be taken care of automatically such that you don't have to worry about it.
+
 ## LaTeX Fonts
 
 The fonts are configured in Document -> Settings -> LaTeX Preamble using the
