@@ -26,6 +26,11 @@ To do so globally, go to Tools -> File handling -> With {non-}Tex Fonts: PDF Lua
 
 Per document, Document -> Settings -> Output -> Default output format: PDF LuaTeX
 
+## Compiling without launching LyX
+
+To compile to PDF all `*.lyx` files in this repo to a PDF, run `nix build` and see the
+results under the `result` folder.
+
 ## LaTeX Fonts
 
 The fonts are configured in Document -> Settings -> LaTeX Preamble using the
@@ -34,3 +39,6 @@ fonts should already be installed in the dev shell.
 
 To view installed fonts run `albatross -tdb0 a | tail -n+6`, to view installed 
 culmus fonts run `albatross -tdb0 a | tail -n+6| grep -C 3 culmus`.
+
+
+Pull requests are welcome!
