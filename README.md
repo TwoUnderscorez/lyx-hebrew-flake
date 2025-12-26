@@ -33,7 +33,7 @@ results under the `result` folder.
 
 ## Installing LaTeX packages
 
-To install a latex package find it on search.nix.org, let's take `relsize` as an example.
+To install a latex package find it on [search.nix.org](https://search.nixos.org/packages), let's take `relsize` as an example.
 [This](https://search.nixos.org/packages?channel=25.11&query=relsize) is what your search result would look like.
 To install the package you'd copy whatever's after `texlivePackages.` to a new line
 in `flake.nix` after line 38. Note that some packages have external dependencies. A good
