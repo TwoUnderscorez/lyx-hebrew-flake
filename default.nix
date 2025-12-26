@@ -3,11 +3,11 @@
   texliveCombined,
 }: {
   default = pkgs.stdenv.mkDerivation rec {
-    name = "lys";
+    name = "lys-document";
 
     src = ./.;
 
-    nativeBuildInputs = (with pkgs; [lyx]) ++ [texliveCombined];
+    nativeBuildInputs = (with pkgs; [lyx findutils]) ++ [texliveCombined];
 
     unpackPhase = ''
       mkdir -p ./workdir
@@ -15,13 +15,14 @@
       cd ./workdir
     '';
 
-    # lyx -userdir ./userdir -E pdflatex ./acid.tex ./acid.lyx
-    # mkdir -p ./userdir ./outdir
-    # pdflatex -output-directory=./outdir ./acid.tex
     buildPhase = ''
       export HOME=$(mktemp -d)
-      mkdir $out
-      lualatex -interaction=nonstopmode -output-directory=$out -output-format=pdf test.tex
+      mkdir -p ./userdir $out
+      for file in $( find . -type f -name '*.lyx' ); do
+        echo $file
+        lyx -userdir ./userdir -E luatex "./''${file}.tex" "./$file"
+        lualatex -interaction=nonstopmode -output-directory=$out -output-format=pdf "./''${file}.tex"
+      done
     '';
 
     dontInstall = true;
