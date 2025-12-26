@@ -18,7 +18,7 @@ See [MadLyX](https://mkali56.wixsite.com/madlyx) pages 14-16. Any other setup fr
 
 #### LaTeX Compiler Setup
 
-This setup relies on LuaLaTeX and Babel because they are superior to XeLaTex/PdfLaTex and Polyglossia.
+This setup relies on LuaLaTeX and Babel.
 
 To compile/preview a document, make sure you've selected LuaTeX in LyX. 
 
